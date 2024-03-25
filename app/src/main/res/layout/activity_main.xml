@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:id="@+id/mainActivity_layout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/verify"/>
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Verify Product Codes"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginBottom="100dp"
+        android:layout_above="@id/btn_verify">
+
+        <EditText
+            android:id="@+id/edt_matric_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Product Number in Full"
+            android:textAllCaps="true"
+            android:gravity="center"
+            android:inputType="text"
+            android:textAppearance="?android:textAppearanceSmall" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txt_cert_available_info"
+        android:layout_width="266dp"
+        android:layout_height="39dp"
+        android:layout_above="@id/btn_verify"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/green" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product Codes "
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/txt_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Here"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_verify"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Verify"
+        android:background="@drawable/corner_radius_bg_colored"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"/>
+    <TextView
+        android:id="@+id/logout"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Logout"
+        android:gravity="center"
+         android:textColor="@color/red"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"/>
+
+
+</RelativeLayout>

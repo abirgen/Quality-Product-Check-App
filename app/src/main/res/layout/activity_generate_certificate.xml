@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GenerateCertificate"
+    android:padding="26dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="20dp"
+        android:src="@drawable/verify"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Product Quality Information"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="This is to certify that"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/student_name"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Is a certified Quality Product"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A verified goods/services"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
